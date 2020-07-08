@@ -1,0 +1,73 @@
+.first-image, .second-image, .third-image {
+    object-fit: fill;
+    width: 100%;
+}
+
+.iconfont.iconyouhui, .iconfont.iconbaokuan, .iconfont.iconnaicha1, .iconfont.iconxiangmutuandui, .iconfont.iconpinpai, .iconfont.iconfuwu1 {
+    color: peru;
+    font-size: 30px;
+}
+
+.advantages {
+    font-size: 20px;
+}
+
+.card-title:hover {
+    transform: rotate(360deg) scale(1.8);
+    -webkit-transform: rotate(360deg) scale(1.8);
+    -moz-transform: rotate(360deg) scale(1.8);
+    -o-transform: rotate(360deg) scale(1.8);
+    -ms-transform: rotate(360deg) scale(1.8);
+}
+
+.card-title {
+    transition: All 0.4s ease-in-out;
+    -webkit-transition: All 0.4s ease-in-out;
+    -moz-transition: All 0.4s ease-in-out;
+    -o-transition: All 0.4s ease-in-out;
+}
+
+main .card {
+    /* min-width: 100px; */
+    min-height: 300px;
+    border: 1px solid#f5222d;
+    background-color: #ffccc7;
+    padding: 8px;
+    border-radius: 8px;
+    margin: 5px -6px;
+}
+
+main .card-body {
+    color: #222;
+    font-size: 25px;
+}
+
+.advantages {
+    transition: All 0.4s ease-in-out;
+    -webkit-transition: All 0.4s ease-in-out;
+    -moz-transition: All 0.4s ease-in-out;
+    -o-transition: All 0.4s ease-in-out;
+}
+
+.advantages:hover {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+}
+.card {
+    transition: All 0.4s ease-in-out;
+    -webkit-transition: All 0.4s ease-in-out;
+    -moz-transition: All 0.4s ease-in-out;
+    -o-transition: All 0.4s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+}
+

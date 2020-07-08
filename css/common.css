@@ -1,0 +1,96 @@
+body {
+    font-family: KaiTi;
+}
+
+.active-title {
+    font-weight: bold;
+    background-color: peru;
+}
+
+.iconfont.iconnaichabeizi {
+    font-size: 40px;
+    line-height: 40px;
+    color: peru;
+}
+
+.row.gutter {
+    margin: 0 auto;
+}
+
+.row.gutter>[class*='col-'] {
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+/* 底部 */
+
+ul li {
+    list-style: none;
+}
+
+.notice .noticeWay li {
+    float: left;
+}
+
+.noticeWay {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.notice .noticeWay li a {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    text-decoration: none;
+}
+
+.notice .noticeWay li:first-child a {
+    background: url("../image/qq.png");
+}
+
+.notice .noticeWay li:nth-child(2) a {
+    background: url("../image/wx.png") 0 0 no-repeat;
+}
+
+.notice .noticeWay li:nth-child(3) a {
+    background: url("../image/taobao.png") 0 0 no-repeat;
+}
+
+.notice .noticeWay li:last-child a {
+    background: url("../image/wb.png") 0 0 no-repeat;
+}
+
+.footer {
+    background-color: #ddd;
+    /* background-color:#f0c9cf; */
+    padding-top: 25px;
+    overflow: hidden;
+}
+
+.connect h5, .saoma h5, .notice h5 {
+    color: #222;
+}
+
+.connectDetail li {
+    position: relative;
+    right: 50%;
+    float: left;
+    padding: 4px 12px;
+}
+
+.connectDetail {
+    position: relative;
+    left: 50%;
+    float: left;
+}
+
+
+.row {
+    margin-left: 0px!important;
+    margin-right: 0px!important;
+}
+.connectDetail li span{
+    font-family: KaiTi!important;
+}

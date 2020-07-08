@@ -1,0 +1,36 @@
+
+/* 内容 */
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.content-left.content-right {
+    width: 550px;
+}
+
+.content-left .map {
+    margin-top: 15px;
+    width: 550px;
+    height: 450px;
+    margin-right: 20px;
+}
+
+.introduce {
+    color: #222;
+    font-weight: 200px;
+    line-height: 30px;
+    text-indent:50px;
+}
+
+#locateMap {
+    height: 450px;
+}
+
+#menu1, #menu2 {
+    display: flex;
+    justify-content: space-around;
+}

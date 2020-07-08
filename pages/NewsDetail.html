@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no,user-scalable=0">
+    <title>奶茶加点糖-详情页</title>
+    <link rel="stylesheet" href="../css/newsDetail.css">
+    <link rel="stylesheet" href="../font/iconfont.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="https://unpkg.com/nprogress@0.2.0/nprogress.css" />
+</head>
+
+<body>
+    <!-- 头部 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #ddd">
+        <a class="navbar-brand iconfont iconnaichabeizi logosize"></a>
+        <span style="font-size: 20px;">奶茶加点糖</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item ">
+                    <a class="nav-link" href="./Home.html">首页</a>
+                </li>
+                <li class="nav-item active-title">
+                    <a class="nav-link" href="./News.html">新闻</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./About.html">关于</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="returnLogo container">
+        <span class="iconfont iconNMStubiao-"></span>
+    </div>
+    <!-- 内容 -->
+    <main>
+        <div class="box">
+            <div class="ball"></div>
+            <div class="ball"></div>
+            <div class="ball"></div>
+        </div>
+        <div id="box">
+            <div class="ball"></div>
+            <div class="ball"></div>
+            <div class="ball"></div>
+        </div>
+        <div class="container">
+            <div class="row ">
+                <div class="col text-center">
+                    <h2 class="h2" id="title"></h2>
+                    <div class="des-date" id="update"></div>
+                    <p id="foodimg"></p>
+                    <p id="dest" class="lead text-left"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- 底部 -->
+    <footer class="footer container-fluid">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-6 connect">
+                <h6 style="text-align: center;font-size: 20px;"><span class="iconfont icondianhua"></span>&nbsp;联系我们
+                </h6>
+                <ul class="connectDetail">
+                    <li class="iconfont  icondizhi"><span>&nbsp;福州市闽侯县上街镇中海寰宇</span></li>
+                    <li class="iconfont iconyouxiang"><span>&nbsp;hututu@qq.com</span></li>
+                    <li class="iconfont icondianhua"><span>&nbsp;400-123-4569</span></li>
+                </ul>
+            </div>
+            <div class="col-4 col-sm-2 col-md-2 col-lg-2 saoma">
+                <h6 style="font-size: 20px;"><span class="iconfont iconsaoma"></span>&nbsp;扫码进店</h6>
+                <span>
+                    <img src="../image/saoma.png" alt="" class="scan" id="scanImg">
+                </span>
+            </div>
+            <div class="col-4 col-sm-2 col-md-2 col-lg-2 notice">
+                <h6 style="font-size: 20px;"><span class="iconfont iconguanzhu1"></span>&nbsp;关注我们</h6>
+                <ul class="noticeWay">
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+            <div class="col-4 col-sm-2 col-md-2 col-lg-2 notice" data-toggle="modal" data-target="#exampleModal">
+                <h6 style="font-size: 20px;"><span class="iconfont iconfankui1"></span>&nbsp;意见反馈</h6>
+                <span class="iconfont iconfankui"></span>&nbsp;点击反馈
+
+            </div>
+        </div>
+        <div style="width:100%;border-top: 2px solid whitesmoke;margin: 30px auto;" class="row text-center">
+            <p class="col">版权所有@胡图图</p>
+        </div>
+        <!-- 反馈 -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">您的评价是对我们最大的支持</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">邮箱:</label>
+                                <input type="text" class="form-control" id="recipient-name" placeholder="@email">
+                            </div>
+                            <div class="form-group">
+                                <label for="message-text" class="col-form-label">反馈信息:</label>
+                                <textarea class="form-control" id="message-text"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                        <button type="button" class="btn btn-primary" id="alert">发送</button>
+                    </div>
+                </div>
+    </footer>
+</body>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/axios.min.js"></script>
+<script src="https://unpkg.com/nprogress@0.2.0/nprogress.js"></script>
+<script>
+    $(function () {
+        var id = parseInt(location.search.split('=')[1]);
+        // $(".box").css('display','block')
+        NProgress.start();
+        axios.get('https://mock-api.com/Gzq27OgW.mock/list')
+            .then(function (res) {
+                var a = res.data[id];
+                $('#title').html(a.title);
+                $('#update').html("发布时间：" + a.date + ' ' + "发布者：xxn");
+                $("#foodimg").html(`<img src="./images/loading.jpg"  data-original="${a.img}" data-srcset="${a.imgs}" class="img-fluid lazyload newssize" data-sizes="auto" alt="...">`)
+                $('#dest').html(a.description);
+                // $(".box").css('display','none')
+                NProgress.done();
+            }).catch(function (res) {
+                console.log('error', res);
+                NProgress.done();
+            })
+        // 返回上一个页面
+        $('.returnLogo').click(function () {
+            window.history.go(-1)
+        })
+
+        //收到反馈
+        var send = $('#alert')
+        send.click(function () {
+            $('.modal-body').html('')
+            $('.modal-body').html('<p  class="pheight">您的反馈信息已收到，我们将真诚为您服务。关于您的评价和建议，我们会尽快处理，请您耐心等候！</p>')
+            const timer = setTimeout(() => {
+                $('#exampleModal').modal('hide')
+                $('.modal-body').html(`<div class="modal-body">
+                                      <form>
+                                        <div class="form-group">
+                                          <label for="recipient-name" class="col-form-label">邮箱:</label>
+                                          <input type="text" class="form-control" id="recipient-name" placeholder="@email">
+                                        </div>
+                                        <div class="form-group">
+                                          <label for="message-text" class="col-form-label">反馈信息:</label>
+                                          <textarea class="form-control" id="message-text"></textarea>
+                                        </div>
+                                      </form>
+                                    </div>`)
+            }, 1000);
+        })
+    })
+</script>
+</script>
+<script src="https://afarkas.github.io/lazysizes/plugins/bgset/ls.bgset.min.js"></script>
+<script src="../js/lazysizes.min.js" async></script>
+
+</html>
