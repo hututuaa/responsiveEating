@@ -265,7 +265,7 @@
                         <h5 class="modal-title" id="exampleModalLabel">您的评价是对我们最大的支持</h5>
                     </div>
                     <div class="modal-body">
-                        <form>
+                        <form action="" novalidate id="form-demo">
                             <div class="form-group">
                                 <label for="recipient-name" class="col-form-label">邮箱:</label>
                                 <input type="text" class="form-control" id="recipient-name" placeholder="@email">
@@ -297,6 +297,14 @@
             loadJS("js/ls.respimg.min.js");
         }
 
+        $("#form-demo").submit(function(event){
+        const f=$(this)
+        if(f[0].checkValidity()===false){
+          event.preventDefault()
+          event.stopPropagation()
+        }
+        f.addClass("was-validated")
+      })
         //收到反馈
         var send = $('#alert')
         send.click(function () {
@@ -304,18 +312,18 @@
             $('.modal-body').html('<p  class="pheight">您的反馈信息已收到，我们将真诚为您服务。关于您的评价和建议，我们会尽快处理，请您耐心等候！</p>')
            setTimeout(() => {
                 $('#exampleModal').modal('hide')
-                // $('.modal-body').html(`<div class="modal-body">
-                //                       <form>
-                //                         <div class="form-group">
-                //                           <label for="recipient-name" class="col-form-label">邮箱:</label>
-                //                           <input type="text" class="form-control" id="recipient-name" placeholder="@email">
-                //                         </div>
-                //                         <div class="form-group">
-                //                           <label for="message-text" class="col-form-label">反馈信息:</label>
-                //                           <textarea class="form-control" id="message-text"></textarea>
-                //                         </div>
-                //                       </form>
-                //                     </div>`)
+                $('.modal-body').html(`<div class="modal-body">
+                                      <form>
+                                        <div class="form-group">
+                                          <label for="recipient-name" class="col-form-label">邮箱:</label>
+                                          <input type="text" class="form-control" id="recipient-name" placeholder="@email">
+                                        </div>
+                                        <div class="form-group">
+                                          <label for="message-text" class="col-form-label">反馈信息:</label>
+                                          <textarea class="form-control" id="message-text"></textarea>
+                                        </div>
+                                      </form>
+                                    </div>`)
             }, 1000);
         })
 
