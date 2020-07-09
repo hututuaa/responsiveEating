@@ -94,3 +94,11 @@ ul li {
 .connectDetail li span{
     font-family: KaiTi!important;
 }
+.saoma,.notice,.connect,.comment{
+    padding: 0;
+}
+#messageTip{
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+}

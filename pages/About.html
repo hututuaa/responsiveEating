@@ -40,9 +40,9 @@
     <main>
         <div class="container">
             <!--内容 介绍-->
-            <h2 style="text-align:center">
+            <h3 style="text-align:center;font-weight: bolder;margin-top: 5px;">
                 奶茶加点糖
-            </h2>
+            </h3>
             <div class="row">
                 <div class="col">
                     <div class="introduce">
@@ -67,7 +67,7 @@
                             <option value="1"> 漳州分部 </option>
                         </select>
                         <span>具体地址：</span>
-                        <input name="field" type="text" id="suggestId" value="福州市闽侯县上街镇中华寰宇" style="overflow:auto"
+                        <input name="field" type="text" id="suggestId" value="福州市闽侯县上街镇中华寰宇" style="overflow:auto;width: 250px;height: 30px;"
                             disabled>
                     </form>
                 </div>
@@ -82,7 +82,7 @@
     <footer class="footer container-fluid">
         <div class="row">
             <div class="col-12 col-sm-6 col-md-6 col-lg-6 connect">
-                <h6 style="text-align: center;font-size: 20px;"><span class="iconfont icondianhua"></span>&nbsp;联系我们</h6>
+                <h6 style="text-align: center;font-size: 18px;font-weight: bold;"><span class="iconfont icondianhua"></span>&nbsp;联系我们</h6>
                 <ul class="connectDetail">
                     <li class="iconfont  icondizhi"><span>&nbsp;福州市闽侯县上街镇中海寰宇</span></li>
                     <li class="iconfont iconyouxiang"><span>&nbsp;hututu@qq.com</span></li>
@@ -90,13 +90,13 @@
                 </ul> 
             </div>
             <div class="col-4 col-sm-2 col-md-2 col-lg-2 saoma">
-                <h6 style="font-size: 20px;"><span class="iconfont iconsaoma"></span>&nbsp;扫码进店</h6>
+                <h6 style="font-size: 18px;font-weight: bold;"><span class="iconfont iconsaoma"></span>&nbsp;扫码进店</h6>
                 <span>
                     <img src="../image/saoma.png" alt="" class="scan" id="scanImg">
                 </span>
             </div>
             <div class="col-4 col-sm-2 col-md-2 col-lg-2 notice">
-                <h6 style="font-size: 20px;"><span class="iconfont iconguanzhu1"></span>&nbsp;关注我们</h6>
+                <h6 style="font-size: 18px;font-weight: bold;"><span class="iconfont iconguanzhu1"></span>&nbsp;关注我们</h6>
                 <ul class="noticeWay">
                     <li><a href="#"></a></li>
                     <li><a href="#"></a></li>
@@ -104,8 +104,8 @@
                     <li><a href="#"></a></li>
                 </ul>
             </div>
-            <div class="col-4 col-sm-2 col-md-2 col-lg-2 notice" data-toggle="modal" data-target="#exampleModal">
-                <h6 style="font-size: 20px;"><span class="iconfont iconfankui1"></span>&nbsp;意见反馈</h6>
+            <div class="col-4 col-sm-2 col-md-2 col-lg-2 comment" data-toggle="modal" data-target="#exampleModal">
+                <h6 style="font-size: 18px;font-weight: bold;"><span class="iconfont iconfankui1"></span>&nbsp;意见反馈</h6>
                 <span class="iconfont iconfankui"></span>&nbsp;点击反馈
                
             </div>
@@ -120,21 +120,25 @@
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">您的评价是对我们最大的支持</h5>
                     </div>
+                    <div class="alert alert-danger alert-dismissible fade show" id="messageTip">
+                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                        <strong>请您先填写完整反馈信息！</strong>
+                    </div>
                     <div class="modal-body">
                         <form>
                             <div class="form-group">
                                 <label for="recipient-name" class="col-form-label">邮箱:</label>
-                                <input type="text" class="form-control" id="recipient-name" placeholder="@email" required="required" >
+                                <input type="text" class="form-control" id="recipient-name" placeholder="@your email" required="required" >
                                 <div class="invalid-feedback">邮箱地址格式不正确！</div>
                             </div>
                             <div class="form-group">
                                 <label for="message-text" class="col-form-label">反馈信息:</label>
-                                <textarea class="form-control" id="message-text"></textarea>
+                                <textarea class="form-control" id="message-text"  placeholder="就在这里说"></textarea>
                             </div>
                         </form>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal" id="close">关闭</button>
                         <button type="button" class="btn btn-primary" id="alert">发送</button>
                     </div>
                 </div>
@@ -171,27 +175,36 @@
     
     //收到反馈
     var send = $('#alert')
-    send.click(function () {
-        $('.modal-body').html('')
-        $('.modal-body').html('<p  class="pheight">您的反馈信息已收到，我们将真诚为您服务。关于您的评价和建议，我们会尽快处理，请您耐心等候！</p>')
-         setTimeout(() => {
-            $('#exampleModal').modal('hide')
-            $('.modal-body').html(`<div class="modal-body">
-                                      <form action="" novalidate id="form-demo">
-                                        <div class="form-group">
-                                          <label for="recipient-name" class="col-form-label">邮箱:</label>
-                                          <input type="text" class="form-control" id="recipient-name" placeholder="@email">
-                              
-                                        </div>
-                                        <div class="form-group">
-                                          <label for="message-text" class="col-form-label">反馈信息:</label>
-                                          <textarea class="form-control" id="message-text"></textarea>
-                                        </div>
-                                      </form>
-                                    </div>`)
-        }, 1000);
-    })
+    $("#messageTip").css('display', "none")
+        $('#close').click(function () {
+            $("#messageTip").css('display', "none")
+        })
+        send.click(function () {
+            if ($("input[type=text]").val() == "" || !$("#message-text").val().replace(/ +/g,"").replace(/[\r\n]/g,"")) {
+                $("#messageTip").css('display', "block")
 
+            } else {
+                $('.modal-body').html('')
+                $('.modal-body').html('<p  class="pheight">您的反馈信息已收到，我们将真诚为您服务。关于您的评价和建议，我们会尽快处理，请您耐心等候！</p>')
+                $("#messageTip").css('display', "none")
+                setTimeout(() => {
+                    $('#exampleModal').modal('hide')
+                    $('.modal-body').html(`<div class="modal-body">
+                                    <form >
+                                        <div class="form-group">
+                                            <label for="recipient-name" class="col-form-label">邮箱:</label>
+                                            <input type="text" class="form-control" id="recipient-name" placeholder="@your email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="message-text" class="col-form-label">反馈信息:</label>
+                                            <textarea class="form-control" id="message-text"  placeholder="就在这里说"></textarea>
+                                        </div>
+                                 </form>
+                                    </div>`)
+                }, 1000);
+            }
+
+        })
 
 </script>
 

@@ -44,7 +44,6 @@
                     <div class="fixHeight"></div>
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
-                        <!-- <a href="#" class="btn btn-primary btn-sm">点击查看</a> -->
                         <button type="button" class="btn btn-outline-info">点我</button>
                     </div>
                 </div>
@@ -54,17 +53,6 @@
                     <div class="fixHeight"></div>
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
-                        <!-- <a href="#" class="btn btn-primary btn-sm">点击查看</a> -->
-                         <button type="button" class="btn btn-outline-info">点我</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-sm-6 col-md-4 col-lg-4">
-                <div class="card mb">
-                    <div class="fixHeight"></div>
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <!-- <a href="#" class="btn btn-primary btn-sm">点击查看</a> -->
                         <button type="button" class="btn btn-outline-info">点我</button>
                     </div>
                 </div>
@@ -74,7 +62,6 @@
                     <div class="fixHeight"></div>
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
-                        <!-- <a href="#" class="btn btn-primary btn-sm">点击查看</a> -->
                         <button type="button" class="btn btn-outline-info">点我</button>
                     </div>
                 </div>
@@ -84,7 +71,6 @@
                     <div class="fixHeight"></div>
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
-                        <!-- <a href="#" class="btn btn-primary btn-sm">点击查看</a> -->
                         <button type="button" class="btn btn-outline-info">点我</button>
                     </div>
                 </div>
@@ -94,7 +80,15 @@
                     <div class="fixHeight"></div>
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
-                        <!-- <a href="#" class="btn btn-primary btn-sm">点击查看</a> -->
+                        <button type="button" class="btn btn-outline-info">点我</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-4 col-lg-4">
+                <div class="card mb">
+                    <div class="fixHeight"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
                         <button type="button" class="btn btn-outline-info">点我</button>
                     </div>
                 </div>
@@ -112,21 +106,23 @@
     <footer class="footer container-fluid">
         <div class="row">
             <div class="col-12 col-sm-6 col-md-6 col-lg-6 connect">
-                <h6 style="text-align: center;font-size: 20px;"><span class="iconfont icondianhua"></span>&nbsp;联系我们</h6>
+                <h6 style="text-align: center;font-size: 18px;font-weight: bold;"><span
+                        class="iconfont icondianhua"></span>&nbsp;联系我们</h6>
                 <ul class="connectDetail">
                     <li class="iconfont  icondizhi"><span>&nbsp;福州市闽侯县上街镇中海寰宇</span></li>
                     <li class="iconfont iconyouxiang"><span>&nbsp;hututu@qq.com</span></li>
                     <li class="iconfont icondianhua"><span>&nbsp;400-123-4569</span></li>
-                </ul> 
+                </ul>
             </div>
             <div class="col-4 col-sm-2 col-md-2 col-lg-2 saoma">
-                <h6 style="font-size: 20px;"><span class="iconfont iconsaoma"></span>&nbsp;扫码进店</h6>
+                <h6 style="font-size: 18px;font-weight: bold;"><span class="iconfont iconsaoma"></span>&nbsp;扫码进店</h6>
                 <span>
                     <img src="../image/saoma.png" alt="" class="scan" id="scanImg">
                 </span>
             </div>
             <div class="col-4 col-sm-2 col-md-2 col-lg-2 notice">
-                <h6 style="font-size: 20px;"><span class="iconfont iconguanzhu1"></span>&nbsp;关注我们</h6>
+                <h6 style="font-size: 18px;font-weight: bold;"><span class="iconfont iconguanzhu1"></span>&nbsp;关注我们
+                </h6>
                 <ul class="noticeWay">
                     <li><a href="#"></a></li>
                     <li><a href="#"></a></li>
@@ -134,10 +130,10 @@
                     <li><a href="#"></a></li>
                 </ul>
             </div>
-            <div class="col-4 col-sm-2 col-md-2 col-lg-2 notice" data-toggle="modal" data-target="#exampleModal">
-                <h6 style="font-size: 20px;"><span class="iconfont iconfankui1"></span>&nbsp;意见反馈</h6>
+            <div class="col-4 col-sm-2 col-md-2 col-lg-2 comment" data-toggle="modal" data-target="#exampleModal">
+                <h6 style="font-size: 18px;font-weight: bold;"><span class="iconfont iconfankui1"></span>&nbsp;意见反馈</h6>
                 <span class="iconfont iconfankui"></span>&nbsp;点击反馈
-               
+
             </div>
         </div>
         <div style="width:100%;border-top: 2px solid whitesmoke;margin: 30px auto;" class="row text-center">
@@ -150,20 +146,24 @@
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">您的评价是对我们最大的支持</h5>
                     </div>
+                    <div class="alert alert-danger alert-dismissible fade show" id="messageTip">
+                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                        <strong>请您先填写完整反馈信息！</strong>
+                    </div>
                     <div class="modal-body">
                         <form>
                             <div class="form-group">
                                 <label for="recipient-name" class="col-form-label">邮箱:</label>
-                                <input type="text" class="form-control" id="recipient-name" placeholder="@email">
+                                <input type="text" class="form-control" id="recipient-name" placeholder="@your email">
                             </div>
                             <div class="form-group">
                                 <label for="message-text" class="col-form-label">反馈信息:</label>
-                                <textarea class="form-control" id="message-text"></textarea>
+                                <textarea class="form-control" id="message-text"  placeholder="就在这里说"></textarea>
                             </div>
                         </form>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal" id="close">关闭</button>
                         <button type="button" class="btn btn-primary" id="alert">发送</button>
                     </div>
                 </div>
@@ -188,24 +188,35 @@
 
         //收到反馈
         var send = $('#alert')
+        $("#messageTip").css('display', "none")
+        $('#close').click(function () {
+            $("#messageTip").css('display', "none")
+        })
         send.click(function () {
-            $('.modal-body').html('')
-            $('.modal-body').html('<p  class="pheight">您的反馈信息已收到，我们将真诚为您服务。关于您的评价和建议，我们会尽快处理，请您耐心等候！</p>')
-             setTimeout(() => {
-                $('#exampleModal').modal('hide')
-                $('.modal-body').html(`<div class="modal-body">
-                                      <form>
+            if ($("input[type=text]").val() == "" || !$("#message-text").val().replace(/ +/g, "").replace(/[\r\n]/g, "")) {
+                $("#messageTip").css('display', "block")
+
+            } else {
+                $('.modal-body').html('')
+                $('.modal-body').html('<p  class="pheight">您的反馈信息已收到，我们将真诚为您服务。关于您的评价和建议，我们会尽快处理，请您耐心等候！</p>')
+                $("#messageTip").css('display', "none")
+                setTimeout(() => {
+                    $('#exampleModal').modal('hide')
+                    $('.modal-body').html(`<div class="modal-body">
+                                    <form >
                                         <div class="form-group">
-                                          <label for="recipient-name" class="col-form-label">邮箱:</label>
-                                          <input type="text" class="form-control" id="recipient-name" placeholder="@email">
+                                            <label for="recipient-name" class="col-form-label">邮箱:</label>
+                                            <input type="text" class="form-control" id="recipient-name" placeholder="@your email">
                                         </div>
                                         <div class="form-group">
-                                          <label for="message-text" class="col-form-label">反馈信息:</label>
-                                          <textarea class="form-control" id="message-text"></textarea>
+                                            <label for="message-text" class="col-form-label">反馈信息:</label>
+                                            <textarea class="form-control" id="message-text"  placeholder="就在这里说"></textarea>
                                         </div>
-                                      </form>
+                                 </form>
                                     </div>`)
-            }, 1000);
+                }, 1000);
+            }
+
         })
         function pageGet(page) {
             // 进度条
@@ -217,7 +228,7 @@
                         $('.card').eq(index).find('.fixHeight').html(`<img src="./images/loading.jpg"  data-original="${ele.img}" data-srcset="${ele.imgs}" class="card-img-top img-fluid lazyload" data-sizes="auto" alt="...">`)
                         $('.card-title').eq(index).html(ele.title)
                         // $('.card-body').eq(index).find('a').prop('href', `NewsDetail.html?id=${ele.id}`);
-                        $('.card-body').eq(index).find('button').click(function(){window.location.href =`NewsDetail.html?id=${ele.id}`})
+                        $('.card-body').eq(index).find('button').click(function () { window.location.href = `NewsDetail.html?id=${ele.id}` })
                     })
                     // 进度条
                     NProgress.done();
