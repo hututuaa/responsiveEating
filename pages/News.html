@@ -191,6 +191,8 @@
         $("#messageTip").css('display', "none")
         $('#close').click(function () {
             $("#messageTip").css('display', "none")
+            $("input[type=text]").val("")
+            $("#message-text").val("")
         })
         send.click(function () {
             if ($("input[type=text]").val() == "" || !$("#message-text").val().replace(/ +/g, "").replace(/[\r\n]/g, "")) {
