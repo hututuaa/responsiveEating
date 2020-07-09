@@ -2,7 +2,7 @@ var gulp = require('gulp')
 var responsive = require('gulp-responsive')
 gulp.task('default', function () {
  return gulp
- .src('./image/*.{jpg,png}')
+ .src('./images/*.{jpg,png}')
  .pipe(
  responsive({
  '*': [
