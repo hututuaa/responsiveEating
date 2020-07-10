@@ -229,7 +229,7 @@
                     var now = res.data;
                     
                     $.each(now, function (index, ele) {
-                        $('.card').eq(index).find('.fixHeight').html(`<img src="../images/loading.jpg"  data-original="${ele.img}" data-srcset="${ele.imgs}" class="card-img-top img-fluid lazyload" data-sizes="auto" alt="...">`)
+                        $('.card').eq(index).find('.fixHeight').html(`<img src="../dist/images/loading-original.jpg"  data-original="${ele.img}" data-srcset="${ele.imgs}" class="card-img-top img-fluid lazyload" data-sizes="auto" alt="...">`)
                         $('.card-title').eq(index).html(ele.title)
                         // $('.card-body').eq(index).find('a').prop('href', `NewsDetail.html?id=${ele.id}`);
                         $('.card-body').eq(index).find('button').click(function () { window.location.href = `NewsDetail.html?id=${ele.id}` })
