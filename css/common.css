@@ -47,19 +47,19 @@ ul li {
 }
 
 .notice .noticeWay li:first-child a {
-    background: url("../image/qq.png");
+    background: url("../images/qq.png");
 }
 
 .notice .noticeWay li:nth-child(2) a {
-    background: url("../image/wx.png") 0 0 no-repeat;
+    background: url("../images/wx.png") 0 0 no-repeat;
 }
 
 .notice .noticeWay li:nth-child(3) a {
-    background: url("../image/taobao.png") 0 0 no-repeat;
+    background: url("../images/taobao.png") 0 0 no-repeat;
 }
 
 .notice .noticeWay li:last-child a {
-    background: url("../image/wb.png") 0 0 no-repeat;
+    background: url("../images/wb.png") 0 0 no-repeat;
 }
 
 .footer {

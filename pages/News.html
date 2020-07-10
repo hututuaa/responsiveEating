@@ -117,7 +117,7 @@
             <div class="col-4 col-sm-2 col-md-2 col-lg-2 saoma">
                 <h6 style="font-size: 18px;font-weight: bold;"><span class="iconfont iconsaoma"></span>&nbsp;扫码进店</h6>
                 <span>
-                    <img src="../image/saoma.png" alt="" class="scan" id="scanImg">
+                    <img src="../images/saoma.png" alt="" class="scan" id="scanImg">
                 </span>
             </div>
             <div class="col-4 col-sm-2 col-md-2 col-lg-2 notice">
@@ -158,7 +158,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="message-text" class="col-form-label">反馈信息:</label>
-                                <textarea class="form-control" id="message-text"  placeholder="就在这里说"></textarea>
+                                <textarea class="form-control" id="message-text" placeholder="就在这里说"></textarea>
                             </div>
                         </form>
                     </div>
@@ -223,11 +223,13 @@
         function pageGet(page) {
             // 进度条
             NProgress.start();
-            axios.get('https://mock-api.com/Gzq27OgW.mock/list?page=' + page)
+            // axios.get('https://mock-api.com/Gzq27OgW.mock/list?page=' + page)
+            axios.get('http://mock-api.com/vKVNOEK8.mock/api/eating?page=' + page)
                 .then(function (res) {
                     var now = res.data;
+                    
                     $.each(now, function (index, ele) {
-                        $('.card').eq(index).find('.fixHeight').html(`<img src="./images/loading.jpg"  data-original="${ele.img}" data-srcset="${ele.imgs}" class="card-img-top img-fluid lazyload" data-sizes="auto" alt="...">`)
+                        $('.card').eq(index).find('.fixHeight').html(`<img src="../images/loading.jpg"  data-original="${ele.img}" data-srcset="${ele.imgs}" class="card-img-top img-fluid lazyload" data-sizes="auto" alt="...">`)
                         $('.card-title').eq(index).html(ele.title)
                         // $('.card-body').eq(index).find('a').prop('href', `NewsDetail.html?id=${ele.id}`);
                         $('.card-body').eq(index).find('button').click(function () { window.location.href = `NewsDetail.html?id=${ele.id}` })

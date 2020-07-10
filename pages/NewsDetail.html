@@ -76,7 +76,7 @@
             <div class="col-4 col-sm-2 col-md-2 col-lg-2 saoma">
                 <h6 style="font-size: 18px;font-weight: bold;"><span class="iconfont iconsaoma"></span>&nbsp;扫码进店</h6>
                 <span>
-                    <img src="../image/saoma.png" alt="" class="scan" id="scanImg">
+                    <img src="../images/saoma.png" alt="" class="scan" id="scanImg">
                 </span>
             </div>
             <div class="col-4 col-sm-2 col-md-2 col-lg-2 notice">
@@ -136,7 +136,7 @@
         var id = parseInt(location.search.split('=')[1]);
         // $(".box").css('display','block')
         NProgress.start();
-        axios.get('https://mock-api.com/Gzq27OgW.mock/list')
+        axios.get('http://mock-api.com/vKVNOEK8.mock/api/eating')
             .then(function (res) {
                 var a = res.data[id];
                 $('#title').html(a.title);
