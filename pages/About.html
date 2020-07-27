@@ -151,7 +151,7 @@
 </body>
 <script src="../js/jquery.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
-<script type="text/javascript">
+<script>
     $(function () {
         // 百度地图API功能
         var map = new BMap.Map("locateMap");
@@ -184,11 +184,11 @@
         $("#messageTip").css('display', "none")
         $('#close').click(function () {
             $("#messageTip").css('display', "none")
-            $("input[type=text]").val("")
+            $("#recipient-name").val("")
             $("#message-text").val("")
         })
         send.click(function () {
-            if ($("input[type=text]").val() == "" || !$("#message-text").val().replace(/ +/g, "").replace(/[\r\n]/g, "")) {
+            if ($("#recipient-name").val() == "" || !$("#message-text").val().replace(/ +/g, "").replace(/[\r\n]/g, "")) {
                 $("#messageTip").css('display', "block")
 
             } else {
