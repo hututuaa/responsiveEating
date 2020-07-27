@@ -6,6 +6,20 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "3050508",
+      "name": "定位",
+      "font_class": "location",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "14348127",
+      "name": "消 息 (1)",
+      "font_class": "xiaoxi1",
+      "unicode": "e695",
+      "unicode_decimal": 59029
+    },
+    {
       "icon_id": "637761",
       "name": "反馈",
       "font_class": "fankui",
@@ -88,13 +102,6 @@
       "font_class": "saoma",
       "unicode": "e6bd",
       "unicode_decimal": 59069
-    },
-    {
-      "icon_id": "1048275",
-      "name": "地址",
-      "font_class": "dizhi",
-      "unicode": "e636",
-      "unicode_decimal": 58934
     },
     {
       "icon_id": "9833314",
