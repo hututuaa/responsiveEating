@@ -8,14 +8,16 @@ html {
 
 .active-title {
     font-weight: bold;
-    background-color: peru;
+    /* background-color: peru; */
+    background-color: #f7cdbc;
+  
 }
 
 .iconfont.iconnaichabeizi {
     /* font-size: 40px; */
     font-size: 2.5rem;
     line-height: 40px;
-    color: peru;
+    color: #f7cdbc;
 }
 
 .row.gutter {
