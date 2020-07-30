@@ -14,13 +14,13 @@
     font-size: 1.25rem;
 }
 
-.card-title:hover {
+/* .card-title:hover {
     transform: rotate(360deg) scale(1.7);
     -webkit-transform: rotate(360deg) scale(1.7);
     -moz-transform: rotate(360deg) scale(1.7);
     -o-transform: rotate(360deg) scale(1.7);
     -ms-transform: rotate(360deg) scale(1.7);
-}
+} */
 
 .card-title {
     transition: All 0.4s ease-in-out;
@@ -34,7 +34,8 @@ main .card {
     min-height: 300px;
     border: 1px solid#f5222d;
     background-color: #ffccc7;
-    padding: 8px;
+    /* padding: 8px; */
+
     border-radius: 8px;
     margin: 5px -6px;
 }
@@ -73,5 +74,8 @@ main .card-body {
     -moz-transform: scale(1.2);
     -o-transform: scale(1.2);
     -ms-transform: scale(1.2);
+    z-index: 99;
 }
-
+main .card img{
+    border-radius: 8px;
+}
