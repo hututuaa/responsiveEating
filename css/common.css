@@ -138,3 +138,9 @@ ul li {
         font-size: 25px;
     }
 }
+.iconfont.iconguanzhu1,.iconfont.iconsaoma,.iconfont.iconfankui1,h6 .iconfont.icondianhua{
+    font-size: 1rem;
+}
+.iconfont.iconlocation,.iconfont.iconyouxiang,.iconfont.icondianhua,.iconfont.iconxiaoxi1{
+    font-size: 0.8rem;
+}
