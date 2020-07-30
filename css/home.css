@@ -2,14 +2,16 @@
     object-fit: fill;
     width: 100%;
 }
-
 .iconfont.iconyouhui, .iconfont.iconbaokuan, .iconfont.iconnaicha1, .iconfont.iconxiangmutuandui, .iconfont.iconpinpai, .iconfont.iconfuwu1 {
     color: peru;
-    font-size: 30px;
+    /* font-size: 30px; */
+    font-size: 1.875rem;
+    
 }
 
 .advantages {
-    font-size: 20px;
+    /* font-size: 20px; */
+    font-size: 1.25rem;
 }
 
 .card-title:hover {
@@ -39,7 +41,8 @@ main .card {
 
 main .card-body {
     color: #222;
-    font-size: 25px;
+    /* font-size: 25px; */
+    font-size: 1.56rem;
 }
 
 .advantages {
