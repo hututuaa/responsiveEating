@@ -86,19 +86,17 @@ ul li {
     float: left;
 }
 
-
-.row {
-    margin-left: 0px!important;
-    margin-right: 0px!important;
-}
-.connectDetail li span{
+.connectDetail li span {
     font-family: KaiTi!important;
 }
-.saoma,.notice,.connect,.comment{
+
+.saoma, .notice, .connect, .comment {
     padding: 0;
 }
-#messageTip{
+
+#messageTip {
     position: absolute;
     z-index: 99;
     width: 100%;
 }
+
