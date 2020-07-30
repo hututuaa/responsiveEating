@@ -42,7 +42,8 @@ main .card {
 main .card-body {
     color: #222;
     /* font-size: 25px; */
-    font-size: 1.56rem;
+    /* font-size: 1.56rem; */
+    font-size: 1.375rem;
 }
 
 .advantages {
