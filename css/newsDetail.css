@@ -21,14 +21,14 @@
     text-indent: 3.125rem;
 }
 
-.box {
+/* .box {
     display: flex;
     justify-content: left;
-    position: absolute;
+    position: absolute; */
     /* left: 50%;
     top: 50%;
     transform: translate(-50%, -50%); */
-}
+/* }
 
 .ball {
     width: 10px;
@@ -52,4 +52,4 @@
         opacity: 0.1;
         transform: translate(0, 10px);
     }
-}
+} */
